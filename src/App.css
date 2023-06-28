@@ -5,38 +5,28 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cardContainer {
+  padding: 1em;
+  display: grid;
+  grid-template: 
+                "a a" 300px
+                "b b" 40px / 1fr 1fr
+                ;
+  gap: 16px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  margin: 16px;
+  border-radius: 8px;
+  background-color: rgb(171, 166, 177);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.cardContainer img {
+  grid-area: a;
+  border-radius: 5px;
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

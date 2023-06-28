@@ -18,10 +18,9 @@ export function SeedButton ({cards, setCards}:Props) {
     const seedCards = () => {
         setCards([]);
         let seededCards = [];
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0; i < 12; i++) {
             seededCards.push(generateCard(i));
         };
-        console.log("seededCards: ", seededCards);
         setCards(seededCards);
     };
 

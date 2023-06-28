@@ -6,14 +6,14 @@ interface Props {
     setCards: Function,
 }
 
-
 export function CardList ({cards, setCards}:Props) {
+    console.log(cards);
     
     return (
         <ul>
             {cards.map((card) => (
                 <li key={card.id} >
-                    <Card id={card.id} imgURL={card.imgURL} cards={cards }setCards={setCards}/>
+                    <Card id={card.id} imgURL={card.imgURL} cards={cards} setCards={setCards}/>
                 </li>
             ))}
             
